@@ -9,14 +9,6 @@ class CocktailsController < ApplicationController
   def show
   end
 
-  def new
-    @cocktail = Cocktail.new
-  end
-
-  def create
-  end
-
-
   private
 
   def set_cocktail
