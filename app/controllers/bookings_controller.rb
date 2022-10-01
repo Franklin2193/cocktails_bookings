@@ -1,5 +1,8 @@
 class BookingsController < ApplicationController
+  require 'simple-form-datepicker'
   before_action :set_booking, only: %i[show destroy]
+  before_action :set_cocktail, only: %i[new create]
+
   def new
     @booking = Booking.new
   end
@@ -31,5 +34,9 @@ class BookingsController < ApplicationController
 
   def set_booking
     @booking = Booking.find(params[:id])
+  end
+
+  def set_cocktail
+    @cocktail = Cocktail.find(params[:cocktail_id])
   end
 end
