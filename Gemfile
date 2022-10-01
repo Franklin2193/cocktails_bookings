@@ -51,6 +51,11 @@ gem 'jquery-ui-rails'
 gem 'simple-form-datepicker'
 
 gem "devise"
+
+gem "cloudinary"
+
+gem "dotenv-rails", groups: [:development, :test]
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
