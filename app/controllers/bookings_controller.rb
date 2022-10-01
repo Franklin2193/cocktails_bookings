@@ -19,6 +19,7 @@ class BookingsController < ApplicationController
   end
 
   def show
+    @cocktail = Cocktail.find(@booking.cocktail_id)
   end
 
   def destroy
