@@ -1,5 +1,5 @@
 <%= require 'simple-form-datepicker' %>
-<div class="container m-3">
+<div style="margin: 100px 20px 0">
   <%= simple_form_for [@cocktail, @booking] do |f| %>
     <%= f.input :date, as: :date %>
     <%= f.button :submit, class:"btn btn-primary" %>
