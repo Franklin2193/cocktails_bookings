@@ -1,3 +1,5 @@
 <h1><%= @cocktail.name %></h1>
 <%= @cocktail.price %>
 <%= @cocktail.description%>
+
+<%= link_to "Book this #{@cocktail.name}", new_cocktail_booking_path(@cocktail) %>
