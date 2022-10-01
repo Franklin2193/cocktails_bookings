@@ -1,7 +1,4 @@
-<p>Estos p se borran, es que quería ver el contenido y la barra no me dejaba pero ya vos le pones la margen y eso, gracias men</p>
-<p>aaaa</p>
-<p>aaaa</p>
-<p>aaaa</p>
-<p>aaaa</p>
-<p>Congrats <%= current_user.email %>, you'll get drunk with the <%= @cocktail.name %> on <%= @booking.date %></p>
-<p><%= link_to "Cancel this order", booking_path(@booking), class: "btn btn-dark", data: { turbo_method: :delete, turbo_confirm: "Are you sure you don't want to get drunk?" } %></p>
+<div style="margin: 100px 20px 0">
+  <p>Congrats <%= current_user.email %>, you'll get drunk with the <%= @cocktail.name %> on <%= @booking.date %></p>
+  <p><%= link_to "Cancel this order", booking_path(@booking), class: "btn btn-dark", data: { turbo_method: :delete, turbo_confirm: "Are you sure you don't want to get drunk?" } %></p>
+</div>
